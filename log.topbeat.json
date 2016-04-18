@@ -1,0 +1,1574 @@
+2016/04/18 12:22:16.250598 geolite.go:24: INFO GeoIP disabled: No paths were set under output.geoip.paths
+2016/04/18 12:22:16.250642 file.go:39: INFO File output base filename set to: topbeat
+2016/04/18 12:22:16.250652 file.go:50: INFO Rotate every bytes set to: 10240000
+2016/04/18 12:22:16.250657 file.go:57: INFO Number of files set to: 7
+2016/04/18 12:22:16.250675 outputs.go:126: INFO Activated file as output plugin.
+2016/04/18 12:22:16.253880 outputs.go:126: INFO Activated elasticsearch as output plugin.
+2016/04/18 12:22:16.253905 publish.go:232: DBG  Create output worker
+2016/04/18 12:22:16.253958 publish.go:232: DBG  Create output worker
+2016/04/18 12:22:16.253991 publish.go:274: DBG  No output is defined to store the topology. The server fields might not be filled.
+2016/04/18 12:22:16.254028 publish.go:288: INFO Publisher name: Azhars-MacBook-Air.local
+2016/04/18 12:22:16.254159 async.go:78: INFO Flush Interval set to: -1ms
+2016/04/18 12:22:16.254171 async.go:84: INFO Max Bulk Size set to: -1
+2016/04/18 12:22:16.254184 async.go:78: INFO Flush Interval set to: 1s
+2016/04/18 12:22:16.254191 async.go:84: INFO Max Bulk Size set to: 50
+2016/04/18 12:22:16.254200 async.go:92: DBG  create bulk processing worker (interval=1s, bulk size=50)
+2016/04/18 12:22:16.254263 beat.go:147: INFO Init Beat: topbeat; Version: 1.2.1
+2016/04/18 12:22:16.254931 beat.go:173: INFO topbeat sucessfully setup. Start running.
+2016/04/18 12:22:26.288922 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.288Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "cpu": {
+    "user": 9862,
+    "user_p": 0,
+    "nice": 0,
+    "system": 5105,
+    "system_p": 0,
+    "idle": 77738,
+    "iowait": 0,
+    "irq": 0,
+    "softirq": 0,
+    "steal": 0
+  },
+  "cpus": {
+    "cpu0": {
+      "user": 3368,
+      "user_p": 0,
+      "nice": 0,
+      "system": 2079,
+      "system_p": 0,
+      "idle": 17797,
+      "iowait": 0,
+      "irq": 0,
+      "softirq": 0,
+      "steal": 0
+    },
+    "cpu1": {
+      "user": 1687,
+      "user_p": 0,
+      "nice": 0,
+      "system": 801,
+      "system_p": 0,
+      "idle": 20665,
+      "iowait": 0,
+      "irq": 0,
+      "softirq": 0,
+      "steal": 0
+    },
+    "cpu2": {
+      "user": 3117,
+      "user_p": 0,
+      "nice": 0,
+      "system": 1417,
+      "system_p": 0,
+      "idle": 18620,
+      "iowait": 0,
+      "irq": 0,
+      "softirq": 0,
+      "steal": 0
+    },
+    "cpu3": {
+      "user": 1690,
+      "user_p": 0,
+      "nice": 0,
+      "system": 808,
+      "system_p": 0,
+      "idle": 20656,
+      "iowait": 0,
+      "irq": 0,
+      "softirq": 0,
+      "steal": 0
+    }
+  },
+  "load": {
+    "load1": 2.3251953125,
+    "load5": 2.1962890625,
+    "load15": 1.0927734375
+  },
+  "mem": {
+    "total": 4294967296,
+    "used": 3427590144,
+    "free": 867377152,
+    "used_p": 0.8,
+    "actual_used": 2460545024,
+    "actual_free": 1834422272,
+    "actual_used_p": 0.57
+  },
+  "swap": {
+    "total": 0,
+    "used": 0,
+    "free": 0,
+    "used_p": 0
+  },
+  "type": "system"
+}
+2016/04/18 12:22:26.289075 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.289586 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.289Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 40,
+      "user_p": 0.0051,
+      "system": 22,
+      "total": 62,
+      "start_time": "17:52"
+    },
+    "mem": {
+      "size": 587189256192,
+      "rss": 13426688,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 475,
+    "ppid": 474,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.289907 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.289Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sudo ./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 8,
+      "user_p": 0,
+      "system": 7,
+      "total": 15,
+      "start_time": "17:52"
+    },
+    "mem": {
+      "size": 2513559552,
+      "rss": 3125248,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sudo",
+    "pid": 474,
+    "ppid": 435,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.290170 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.290Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker32 -s mdworker-lsb -c MDSImporterWorker -m com.apple.mdworker.32bit",
+    "cpu": {
+      "user": 132,
+      "user_p": 0,
+      "system": 89,
+      "total": 221,
+      "start_time": "17:51"
+    },
+    "mem": {
+      "size": 462561280,
+      "rss": 27394048,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "mdworker32",
+    "pid": 472,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.290431 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.290Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker32 -s mdworker-lsb -c MDSImporterWorker -m com.apple.mdworker.32bit",
+    "cpu": {
+      "user": 132,
+      "user_p": 0,
+      "system": 123,
+      "total": 255,
+      "start_time": "17:51"
+    },
+    "mem": {
+      "size": 462561280,
+      "rss": 27275264,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "mdworker32",
+    "pid": 471,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.290686 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.290Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks/PhotoLibraryServices.framework/Versions/A/XPCServices/com.apple.photomoments.xpc/Contents/MacOS/com.apple.photomoments",
+    "cpu": {
+      "user": 83,
+      "user_p": 0,
+      "system": 42,
+      "total": 125,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2566107136,
+      "rss": 16793600,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.photo",
+    "pid": 470,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.290965 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.290Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd",
+    "cpu": {
+      "user": 30,
+      "user_p": 0,
+      "system": 18,
+      "total": 48,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2557509632,
+      "rss": 14397440,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "backupd",
+    "pid": 469,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.291189 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.291Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/ScopedBookmarkAgent",
+    "cpu": {
+      "user": 22,
+      "user_p": 0,
+      "system": 10,
+      "total": 32,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2557894656,
+      "rss": 4993024,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "ScopedBookmarkA",
+    "pid": 468,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.291419 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.291Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Support/photolibraryd",
+    "cpu": {
+      "user": 371,
+      "user_p": 0,
+      "system": 172,
+      "total": 543,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2566721536,
+      "rss": 17354752,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "photolibraryd",
+    "pid": 467,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.291737 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.291Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/taskgated -s",
+    "cpu": {
+      "user": 5,
+      "user_p": 0,
+      "system": 5,
+      "total": 10,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2513027072,
+      "rss": 3284992,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "taskgated",
+    "pid": 466,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.292002 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.291Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/QuickLook.framework/Versions/A/Resources/quicklookd.app/Contents/XPCServices/QuickLookSatellite.xpc/Contents/MacOS/QuickLookSatellite",
+    "cpu": {
+      "user": 53,
+      "user_p": 0,
+      "system": 41,
+      "total": 94,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2562490368,
+      "rss": 11403264,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "QuickLookSatell",
+    "pid": 458,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.292705 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.292Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/XPCServices/DataDetectorsDynamicData.xpc/Contents/MacOS/DataDetectorsDynamicData",
+    "cpu": {
+      "user": 76,
+      "user_p": 0,
+      "system": 26,
+      "total": 102,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2561404928,
+      "rss": 14938112,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "DataDetectorsDy",
+    "pid": 448,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.293141 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.292Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMCompiler 2",
+    "cpu": {
+      "user": 23,
+      "user_p": 0,
+      "system": 6,
+      "total": 29,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 2549743616,
+      "rss": 4272128,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CVMCompiler",
+    "pid": 447,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.293451 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.293Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/quicklookd",
+    "cpu": {
+      "user": 213,
+      "user_p": 0,
+      "system": 156,
+      "total": 369,
+      "start_time": "17:50"
+    },
+    "mem": {
+      "size": 3089756160,
+      "rss": 16986112,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "quicklookd",
+    "pid": 446,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.293723 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.293Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "-bash",
+    "cpu": {
+      "user": 14,
+      "user_p": 0,
+      "system": 8,
+      "total": 22,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2522198016,
+      "rss": 1638400,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "bash",
+    "pid": 435,
+    "ppid": 434,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.293994 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.293Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "login -pf azharkhan",
+    "cpu": {
+      "user": 10,
+      "user_p": 0,
+      "system": 11,
+      "total": 21,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2530312192,
+      "rss": 4456448,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "login",
+    "pid": 434,
+    "ppid": 400,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.294338 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.294Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/distnoted agent",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 6,
+      "total": 12,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2530107392,
+      "rss": 2023424,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "distnoted",
+    "pid": 433,
+    "ppid": 1,
+    "state": "running",
+    "username": "_spotlight"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.294608 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.294Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 18,
+      "user_p": 0,
+      "system": 11,
+      "total": 29,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2559754240,
+      "rss": 11071488,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 432,
+    "ppid": 1,
+    "state": "running",
+    "username": "_spotlight"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.295060 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.294Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 25,
+      "user_p": 0,
+      "system": 16,
+      "total": 41,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2562981888,
+      "rss": 12447744,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 431,
+    "ppid": 1,
+    "state": "running",
+    "username": "_spotlight"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.295766 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.295Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 22,
+      "user_p": 0,
+      "system": 15,
+      "total": 37,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2559754240,
+      "rss": 11071488,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 430,
+    "ppid": 1,
+    "state": "running",
+    "username": "_spotlight"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.297067 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.296Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 25,
+      "user_p": 0,
+      "system": 17,
+      "total": 42,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2562981888,
+      "rss": 12464128,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 429,
+    "ppid": 1,
+    "state": "running",
+    "username": "_spotlight"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.297441 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.297Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/bin/java -Xms256m -Xmx1g -Djava.awt.headless=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -Dfile.encoding=UTF-8 -Djna.nosys=true -Des.path.home=/Users/azharkhan/elasticsearch-2.3.1 -cp /Users/azharkhan/elasticsearch-2.3.1/lib/elasticsearch-2.3.1.jar:/Users/azharkhan/elasticsearch-2.3.1/lib/* org.elasticsearch.bootstrap.Elasticsearch start",
+    "cpu": {
+      "user": 32025,
+      "user_p": 0.0047,
+      "system": 2892,
+      "total": 34917,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 5240152064,
+      "rss": 330862592,
+      "rss_p": 0.08,
+      "share": 0
+    },
+    "name": "java",
+    "pid": 417,
+    "ppid": 403,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.298653 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.298Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/USBAgent",
+    "cpu": {
+      "user": 12,
+      "user_p": 0,
+      "system": 10,
+      "total": 22,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2530807808,
+      "rss": 6508544,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "USBAgent",
+    "pid": 415,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.298870 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.298Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storedownloadd",
+    "cpu": {
+      "user": 29,
+      "user_p": 0,
+      "system": 28,
+      "total": 57,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2559275008,
+      "rss": 12820480,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "storedownloadd",
+    "pid": 413,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.299199 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.299Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Resources/LaterAgent.app/Contents/MacOS/LaterAgent",
+    "cpu": {
+      "user": 50,
+      "user_p": 0,
+      "system": 26,
+      "total": 76,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2585051136,
+      "rss": 13955072,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "LaterAgent",
+    "pid": 412,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.299474 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.299Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storelegacy",
+    "cpu": {
+      "user": 17,
+      "user_p": 0,
+      "system": 11,
+      "total": 28,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2557112320,
+      "rss": 10530816,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "storelegacy",
+    "pid": 411,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.299670 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.299Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "-bash",
+    "cpu": {
+      "user": 14,
+      "user_p": 0,
+      "system": 10,
+      "total": 24,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2522198016,
+      "rss": 1638400,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "bash",
+    "pid": 403,
+    "ppid": 401,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.301453 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.301Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+    "cpu": {
+      "user": 12,
+      "user_p": 0,
+      "system": 8,
+      "total": 20,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2530811904,
+      "rss": 6418432,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.audio",
+    "pid": 402,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.301655 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.301Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "login -pf azharkhan",
+    "cpu": {
+      "user": 19,
+      "user_p": 0,
+      "system": 24,
+      "total": 43,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2530312192,
+      "rss": 4341760,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "login",
+    "pid": 401,
+    "ppid": 400,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.301861 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.301Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal",
+    "cpu": {
+      "user": 9359,
+      "user_p": 0.0838,
+      "system": 2459,
+      "total": 11818,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2741858304,
+      "rss": 51253248,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Terminal",
+    "pid": 400,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302065 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.301Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 242,
+      "user_p": 0,
+      "system": 88,
+      "total": 330,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2569175040,
+      "rss": 19828736,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 399,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302280 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.302Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 226,
+      "user_p": 0,
+      "system": 78,
+      "total": 304,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2564206592,
+      "rss": 18087936,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 398,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302423 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.302Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated",
+    "cpu": {
+      "user": 3970,
+      "user_p": 0,
+      "system": 2251,
+      "total": 6221,
+      "start_time": "17:49"
+    },
+    "mem": {
+      "size": 2602733568,
+      "rss": 65417216,
+      "rss_p": 0.02,
+      "share": 0
+    },
+    "name": "softwareupdated",
+    "pid": 397,
+    "ppid": 1,
+    "state": "running",
+    "username": "_softwareupdate"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302562 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.302Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 209,
+      "user_p": 0,
+      "system": 80,
+      "total": 289,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2565836800,
+      "rss": 18812928,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 395,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302700 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.302Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 242,
+      "user_p": 0,
+      "system": 83,
+      "total": 325,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2569015296,
+      "rss": 19841024,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 394,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302834 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.302Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter",
+    "cpu": {
+      "user": 4,
+      "user_p": 0,
+      "system": 9,
+      "total": 13,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2530598912,
+      "rss": 966656,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdflagwriter",
+    "pid": 393,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.302983 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.302Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 787,
+      "user_p": 0,
+      "system": 226,
+      "total": 1013,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2559791104,
+      "rss": 13148160,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 392,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303115 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteURLConnectionAgent.xpc/Contents/MacOS/IMRemoteURLConnectionAgent",
+    "cpu": {
+      "user": 36,
+      "user_p": 0,
+      "system": 17,
+      "total": 53,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2558156800,
+      "rss": 6074368,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "IMRemoteURLConn",
+    "pid": 390,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303260 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteURLConnectionAgent.xpc/Contents/MacOS/IMRemoteURLConnectionAgent",
+    "cpu": {
+      "user": 37,
+      "user_p": 0,
+      "system": 19,
+      "total": 56,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2558156800,
+      "rss": 6062080,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "IMRemoteURLConn",
+    "pid": 389,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303389 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/Frameworks/CloudPhotosConfigurationXPC.framework/Versions/A/XPCServices/com.apple.CloudPhotosConfiguration.xpc/Contents/MacOS/com.apple.CloudPhotosConfiguration",
+    "cpu": {
+      "user": 77,
+      "user_p": 0,
+      "system": 31,
+      "total": 108,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2565799936,
+      "rss": 17010688,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Cloud",
+    "pid": 388,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303547 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKeychainProxy.bundle/Contents/MacOS/CloudKeychainProxy",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 9,
+      "total": 20,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2530443264,
+      "rss": 3977216,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CloudKeychainPr",
+    "pid": 386,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303671 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/Security.framework/Versions/A/Resources/IDSKeychainSyncingProxy.bundle/Contents/MacOS/IDSKeychainSyncingProxy",
+    "cpu": {
+      "user": 15,
+      "user_p": 0,
+      "system": 11,
+      "total": 26,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2530332672,
+      "rss": 4423680,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "IDSKeychainSync",
+    "pid": 385,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303745 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.303827 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/netbiosd",
+    "cpu": {
+      "user": 59,
+      "user_p": 0.0003,
+      "system": 85,
+      "total": 144,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2532904960,
+      "rss": 7659520,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "netbiosd",
+    "pid": 383,
+    "ppid": 1,
+    "state": "running",
+    "username": "_netbios"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303839 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.303914 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.303953 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.303Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/SubmitDiagInfo server-init",
+    "cpu": {
+      "user": 86,
+      "user_p": 0,
+      "system": 29,
+      "total": 115,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2557816832,
+      "rss": 9625600,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SubmitDiagInfo",
+    "pid": 382,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.303965 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304017 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304049 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304077 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304112 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304148 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304175 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304199 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304223 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304110 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.304Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/CrashReporterSupportHelper server-init",
+    "cpu": {
+      "user": 10,
+      "user_p": 0,
+      "system": 8,
+      "total": 18,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2530275328,
+      "rss": 4104192,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CrashReporterSu",
+    "pid": 381,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.304256 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304374 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304396 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.304Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/spindump",
+    "cpu": {
+      "user": 13,
+      "user_p": 0,
+      "system": 15,
+      "total": 28,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2531057664,
+      "rss": 6881280,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "spindump",
+    "pid": 380,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.304425 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304490 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304526 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.304Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/WeatherKit.framework/Versions/A/XPCServices/com.apple.WeatherKitService.xpc/Contents/MacOS/com.apple.WeatherKitService",
+    "cpu": {
+      "user": 151,
+      "user_p": 0,
+      "system": 26,
+      "total": 177,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2558197760,
+      "rss": 14012416,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Weath",
+    "pid": 379,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.304534 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304606 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304635 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304661 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304671 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.304Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/InputMethodKit.framework/Versions/A/XPCServices/com.apple.InputMethodKit.TextReplacementService.xpc/Contents/MacOS/com.apple.InputMethodKit.TextReplacementService",
+    "cpu": {
+      "user": 39,
+      "user_p": 0,
+      "system": 20,
+      "total": 59,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2561130496,
+      "rss": 9302016,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Input",
+    "pid": 378,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.304686 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304936 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.304967 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.305005 output.go:54: DBG  output worker: publish single event
+2016/04/18 12:22:26.305026 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-18T12:22:26.304Z",
+  "beat": {
+    "hostname": "Azhars-MacBook-Air.local",
+    "name": "Azhars-MacBook-Air.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/IMFoundation.framework/IMLoggingAgent",
+    "cpu": {
+      "user": 12,
+      "user_p": 0,
+      "system": 11,
+      "total": 23,
+      "start_time": "17:48"
+    },
+    "mem": {
+      "size": 2530676736,
+      "rss": 4120576,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "IMLoggingAgent",
+    "pid": 377,
+    "ppid": 1,
+    "state": "running",
+    "username": "azharkhan"
+  },
+  "type": "process"
+}
+2016/04/18 12:22:26.305043 output.go:54: DBG  output worker: publish single event
